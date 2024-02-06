@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Model</title>
+  <link href="fonts/remixicon.css" rel="stylesheet" type="text/css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .modal {
+      width: 400px;
+      height: 400px;
+      background-color: rgb(21, 21, 72);
+      display:none;
+      border-radius: 45px 0px;
+      box-shadow: 15px 15px 10px;
+      transition: transform .18s ease;
+      transform: translateX(0);
+    }
+
+    .main{
+      height: 100vh;
+      background-color: rgb(30, 86, 67);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    .open {
+      background-color: black;
+      color: azure;
+      text-decoration: none;
+      padding: 15px 35px;
+      display: inline-block;
+      border-radius: 10px;
+      margin: 10px;
+      position: absolute;
+      top:10px;
+      left:10px;
+    }
+
+    .close {
+      background-color: rgba(15, 7, 7, 0.637);
+      color: rgb(249, 255, 255);
+      text-decoration: none;
+      font-size: 30px;
+      border-radius: 10px;
+      padding: 5px;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+
+    }
+
+    span {
+      display: block;
+      font-size: 25px;
+      color: aliceblue;
+      margin: 5px 0;
+    }
+
+    input {
+      width: 300px;
+      border: 0px;
+      background: none;
+      color:white;
+      font-size: 20px;
+      border-bottom: 3px solid #595959;
+      outline: none;
+    }
+    .form{
+      width: 300px;
+      height: auto;
+      position: absolute;
+      top: 50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      align-items: space-evenly;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+    }
+    .title{
+      color: rgb(255, 255, 255);
+      font-size: 36px;
+      position: absolute;
+      top:30px;
+    }
+    .button{
+      width: 100px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <button>Click</button> -->
+  
+  <div class="main">
+    <a href="javascript:void(0)" class="open">Login</a>
+  <div class="modal">
+
+    <a href="javascript:void(0)" class="close"><i class="ri-close-fill"></i></a>
+    <span class="title">Login</span>
+
+    <div class="form">
+        <form>
+          <span><label for="userid">User Id</label></span>
+          <span><input type="text" name="userid" id="" placeholder="Enter Your User Id"></span>
+
+          <span><label for="password">Password</label></span>
+          <span><input type="password" name="password" id="" placeholder="Enter Your Password"></span>
+
+          <!-- <button type="submit">Login</button> -->
+        <form>
+    </div>
+  </div>
+</div>
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script>
+    $(".open").click(function () {
+      $(".modal").show();
+      // $(".modal").fadeToggle("slow");
+    });
+    $(".close").click(function () {
+      $(".modal").hide();
+    });
+  </script>
+</body>
+
+</html>

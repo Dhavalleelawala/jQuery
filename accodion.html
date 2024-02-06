@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width: 1340px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    h2 {
+      background-color: rgb(177, 179, 175);
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .contant {
+      border: 1px solid rgb(177, 179, 175);
+      padding: 10px;
+      display: none;
+    }
+    .accodion-item{
+      margin-bottom: 5px;
+    }
+    .bgcolour{
+      background-color: rgb(186, 157, 224);
+      border-color: blueviolet;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="accodion">
+      <div class="accodion-item">
+        <h2>Accodian #1</h2>
+        <p class="contant">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem, nisi quis
+          vitae officiis, delectus corrupti accusamus neque nulla at vel sit qui. Tempore, eaque itaque debitis porro
+          officia dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo exercitationem incidunt minima
+          blanditiis sequi unde assumenda quam id, optio aperiam atque possimus error delectus sed maxime nesciunt
+          reprehenderit. Labore, aspernatur.
+        </p>
+      </div>
+      <div class="accodion-item">
+        <h2>Accodian #2</h2>
+        <p class="contant">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem, nisi quis
+          vitae officiis, delectus corrupti accusamus neque nulla at vel sit qui. Tempore, eaque itaque debitis porro
+          officia dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo exercitationem incidunt minima
+          blanditiis sequi unde assumenda quam id, optio aperiam atque possimus error delectus sed maxime nesciunt
+          reprehenderit. Labore, aspernatur.
+        </p>
+      </div>
+      <div class="accodion-item">
+        <h2>Accodian #3</h2>
+        <p class="contant">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius exercitationem, nisi quis
+          vitae officiis, delectus corrupti accusamus neque nulla at vel sit qui. Tempore, eaque itaque debitis porro
+          officia dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo exercitationem incidunt minima
+          blanditiis sequi unde assumenda quam id, optio aperiam atque possimus error delectus sed maxime nesciunt
+          reprehenderit. Labore, aspernatur.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script>
+    $("h2").click(function(){
+      $(this).parent(".accodion-item").find(".contant").slideToggle();
+      // $(this).parent(".accodion-item").prevAll(".accodion-item").find(".contant").slideUp();
+      // $(this).parent(".accodion-item").nextAll(".accodion-item").find(".contant").slideUp();
+      $(this).parent(".accodion-item").siblings(".accodion-item").find(".contant").slideUp();
+      // $(this).toggleClass("bgcolour");
+      // $(this).parent(".accodion-item").siblings(".accodion-item").find("h2").removeClass("bgcolour");
+      // $(".bgcolour").css("background-color","red");
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .btn{
+      background-color: #2b4558;
+      color: #fff;
+      padding: 10px 15px;
+      font-weight: bold;
+      margin: 20px;
+    }
+
+    .box{
+      height:400px;
+      background-color: #9cc4ff;
+      display: none;
+    }
+
+    .active{
+      font-size: 22px;
+      color: #fff;
+      background-color: blue;
+      padding: 20px;
+    }
+    p{
+      color: aqua;
+      transition: all 0.4s linear; 
+    }
+
+   
+  </style>
+</head>
+<body>
+  
+  <button class="btn add-class">addClass</button>
+  <!-- <button class="btn remove-class">removeClass</button>
+  <button class="btn toggle-class">toggleClass</button> -->
+  <!-- <div class="box">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nobis earum accusantium hic, voluptatibus a asperiores laboriosam vitae commodi, excepturi, aliquid voluptates sit! Vitae repellat consequatur tenetur aliquid deserunt dolore?</p> -->
+
+    <div class="box">
+      <h2>Slide</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias nam cupiditate doloremque laborum expedita, fugit quasi esse molestiae et? Sequi natus ullam quas numquam sint dolores quod, voluptas ducimus!</p>
+    </div>
+
+
+  </div>
+
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script>
+    $(".add-class").click(function(){
+      // $("p").addClass("active");
+      // $("p").css("font-size","22px");
+      // $("p").css({"background":"purple"});
+      // $(".box").slideToggle(3000);
+      $(".box").fadeToggle();
+    });
+
+    // $(".remove-class").click(function(){
+    //   $("p").removeClass("active");
+    // });
+
+    //   $(".toggle-class").click(function(){
+    //     $("p").toggleClass("active");
+    //   });
+
+  </script>
+</body>
+</html>

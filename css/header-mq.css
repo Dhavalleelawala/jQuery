@@ -1,0 +1,16 @@
+@media(max-width:767px){
+  header nav {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    right:0;
+    background-color: aqua;
+  }
+  header nav ul{
+    flex-direction: column;
+  }
+  header .toggle{
+    display: block;
+  }
+}

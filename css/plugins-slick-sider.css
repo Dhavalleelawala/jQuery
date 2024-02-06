@@ -1,0 +1,33 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1340px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+body{
+  background-color: aqua;
+}
+
+.slid{
+  background-color: aquamarine;
+  margin: 0 10px;
+  padding: 15px;
+}
+
+p{
+  margin-top: 10px;
+}
+
+.slick-next:before{
+  content: "\ea6e";
+  font-family: remixicon;
+  color: blue;
+  border: 1px solid black;
+  padding: 10px;
+}

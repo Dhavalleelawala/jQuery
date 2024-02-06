@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      background-color: tan;
+    }
+    a{
+      background-color: aqua;
+      color: #675050;
+      border: none;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .box{
+      width: 500px;
+      height: 500px;
+      background-color: blue;
+      margin-top: 20px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- <button type="submit">Click Now</button> -->
+  <!-- <a href="javascript:void(0)">Click Now </a>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores dolor assumenda adipisci pariatur voluptate? Modi voluptas, sit quod eum aspernatur officia provident nulla? Qui illum tempore modi dolores doloremque voluptatem, expedita hic beatae totam ab distinctio facere ipsa sit quidem sunt veniam ipsum commodi vitae natus! Vitae earum fuga harum sequi tempora illum dolorum, voluptatibus dolor. Porro, dolor provident. Praesentium earum porro ipsum vitae quod, accusamus eum maiores repudiandae inventore magnam quos perferendis reprehenderit ducimus asperiores deserunt explicabo consequatur sit reiciendis eaque amet cumque? Debitis voluptas eligendi nostrum dolorem voluptate veritatis voluptatum delectus, facere neque corporis sit amet, repellat officia ad, officiis voluptates eum suscipit temporibus sapiente nulla dicta est? Rem non aliquam eveniet officiis nihil earum, sunt, tenetur sequi nemo assumenda molestias iusto fugit cupiditate porro velit reprehenderit ea? Quia eum recusandae voluptatum adipisci nemo laborum, sit eos perspiciatis iusto ipsam rem iste esse optio velit. Consequatur ex ullam esse aliquam! Doloremque enim quod id suscipit, sed, eum quis debitis architecto expedita eius rerum quae veniam at incidunt rem perspiciatis fugiat, recusandae sit eos reprehenderit nemo qui dicta quasi vero! Officia perferendis in rem, nemo reprehenderit ea! Commodi ipsa dolorem vel optio recusandae sunt aliquid illum dolore quae. Reiciendis!</p> -->
+
+  <form action="">
+    <input type="text" placeholder="text">
+  </form>
+  
+  <div class="box"></div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script>
+    // $("a").click(function(){
+    //   $(".box").hide();
+    // });
+    // $("button").mouseleave(function(){
+    //   $("p").toggle();
+    //   // $(".box").show();
+    // });
+
+    $("input").keyup(function(){
+      alert("Hello User..");
+    });
+  </script>
+</body>
+</html>

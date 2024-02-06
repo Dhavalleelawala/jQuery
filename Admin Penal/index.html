@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fonts/roboto/stylesheet.css" type="text/css">
+  <link rel="stylesheet" href="css/all.min.css" type="text/css">
+  <link rel="stylesheet" href="fonts/remixicon/remixicon.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+  <!-- SIDEBAR -->
+  <aside>
+    <div class="sidebar">
+
+      <div class="logo">
+        <a href="javascript:void(0)">
+          <i class="fa-solid fa-user-pen"></i>
+          DarkPan
+        </a>
+      </div>
+
+      <div class="profile">
+        <div class="d-flex">
+          <img src="img/img-1.jpg" alt="img-1" title="img-1" />
+          <div>
+            <h4>Jhon Doe</h4>
+            <span>Admin</span>
+          </div>
+        </div>
+      </div>
+
+      
+      <ul>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="ri-dashboard-3-line"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="d-flex align-items-center justify-content-between">
+          <a href="javascript:void(0)">
+            <i class="ri-macbook-line"></i>
+            <span>Elements</span>
+          </a>
+          <i class="ri-arrow-drop-down-line"></i>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="ri-grid-fill"></i>
+            <span>Widgets</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa-regular fa-keyboard"></i>
+            <span>Forms</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa-solid fa-table"></i>
+            <span>Tables</span>
+          </a>
+        </li>
+        <li>
+          <a href="javascript:void(0)">
+            <i class="fa-solid fa-chart-column"></i>
+            <span>Charts</span>
+          </a>
+        </li>
+        <li class="d-flex align-items-center justify-content-between">
+          <a href="javascript:void(0)">
+            <i class="fa-regular fa-file-lines"></i>
+            <span>Pages</span>
+          </a>
+          <i class="ri-arrow-drop-down-line"></i>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- HEADER -->
+
+  <header>
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="serch">
+        <a href="javascript:void(0)" class="toggle">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <input type="text" placeholder="Search">
+      </div>
+      <nav>
+        <ul class="d-flex">
+          <li>
+            <a href="javascript:void(0)">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Message</span>
+            <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)">
+              <i class="fa-solid fa-bell"></i>
+              <span>Notificatin</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="d-flex align-items-center">
+              <img src="img/img-1.jpg" alt="img-1" title="img-1">
+              <span>Jhon Doe</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+      
+    <!-- Sale & Revenue -->
+    <section class="sale-revenue">
+      <div class="row justify-content-evenly">
+        <div class="col-3">
+          <div class="sale-rev-items d-flex justify-content-between">
+            <i class="fa-solid fa-chart-line"></i>
+            <div class="sale-rev-text">
+              <span>Today Sale</span>
+              <p>$1234</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="sale-rev-items d-flex justify-content-between">
+            <i class="fa-solid fa-chart-column"></i>
+            <div class="sale-rev-text">
+              <span>Today Sale</span>
+              <p>$1234</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="sale-rev-items d-flex justify-content-between">
+            <i class="fa-solid fa-chart-area"></i>
+            <div class="sale-rev-text">
+              <span>Today Revenue</span>
+              <p>$1234</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="sale-rev-items d-flex justify-content-between">
+            <i class="fa-solid fa-chart-pie"></i>
+            <div class="sale-rev-text">
+              <span>Today Revenue</span>
+              <p>$1234</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Charts -->
+    <section class="charts">
+      <div class="row">
+        <div class="col-6">
+          <div id="chart1" class="charts-items"></div>
+        </div>
+        <div class="col-6">
+          <div id="chart2" class="charts-items"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recent Salse -->
+    <section class="recent-salse">
+      <div class="row">
+        <div class="col-12">
+          <div class="recent-salse-iner">
+            <table border width="100%">
+              <thead>
+                <tr>
+                  <th align="left"><span>Recent Salse</span></th>
+                  <th align="right"><a href="javascript:void(0)">Show All</a></th>
+                </tr>
+              </thead>
+            </table>
+            <table border width="100%">
+              <thead>
+                <th><input type="checkbox"></th>
+                <td>01 Jan 2045</td>
+                <td>INV-0123</td>
+                <td>Jhon Doe</td>
+                <td>$123</td>
+                <td>Paid</td>
+                <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="js/apexcharts.min.js" type="text/javascript"></script>
+  <script src="js/admin-penal.js" type="text/javascript"></script>
+</body>
+
+</html>

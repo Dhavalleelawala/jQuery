@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+a{
+  text-decoration: none;
+  display: inline-block;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.justify-content-between{
+  justify-content:space-between;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+header{
+  background-color: #c8c3c3;
+  position: relative;
+}
+
+header nav ul{
+  list-style: none;
+}
+
+header .logo{
+  font-size: 26px;
+  color: black;
+}
+
+header nav ul li{
+  margin-right: 20px;
+}
+
+header nav ul li a{
+  color: black;
+  font-size: 18px;
+}
+header .toggle{
+  font-size: 26px;
+  color: black;
+  display: none;
+}

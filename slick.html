@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fonts/remixicon.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background-color: #2a6e73;
+    }
+
+    .container{
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 15px;
+    }
+
+    .slider-items{
+      background-color: #000;
+      color: #fff;
+      margin: 0 10px;
+      padding: 20px;
+    }
+
+    .slick-prev:before, .slick-next:before{
+      border: 2px solid #000;
+      padding: 10px;
+    }
+
+    .slick-prev, .slick-next {
+      width: inherit;
+      height: inherit;
+    }
+
+    .slick-prev{
+      left:-50px;
+    }
+
+    .slick-next{
+      right:-50px;
+    }
+
+    .slick-prev:before{
+      content: '\ea5b';
+      font-family: remixicon;
+    }
+
+    .slick-next:before{
+      content: '\ea67';
+      font-family: remixicon;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Responsive Display</h2>
+  <div class="slider responsive">
+    <div class="slider-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum corporis, officia quis perferendis, doloribus nihil repellendus expedita quod enim dolores magnam ipsam atque nam beatae accusamus optio placeat porro?</p>
+    </div>
+    <div class="slider-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum corporis, officia quis perferendis, doloribus nihil repellendus expedita quod enim dolores magnam ipsam atque nam beatae accusamus optio placeat porro?</p>
+    </div>
+    <div class="slider-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum corporis, officia quis perferendis, doloribus nihil repellendus expedita quod enim dolores magnam ipsam atque nam beatae accusamus optio placeat porro?</p>
+    </div>
+    <div class="slider-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum corporis, officia quis perferendis, doloribus nihil repellendus expedita quod enim dolores magnam ipsam atque nam beatae accusamus optio placeat porro?</p>
+    </div>
+    <div class="slider-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum corporis, officia quis perferendis, doloribus nihil repellendus expedita quod enim dolores magnam ipsam atque nam beatae accusamus optio placeat porro?</p>
+    </div>
+    <div class="slider-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum corporis, officia quis perferendis, doloribus nihil repellendus expedita quod enim dolores magnam ipsam atque nam beatae accusamus optio placeat porro?</p>
+    </div>
+    <div class="slider-items">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis rerum corporis, officia quis perferendis, doloribus nihil repellendus expedita quod enim dolores magnam ipsam atque nam beatae accusamus optio placeat porro?</p>
+    </div>
+  </div>
+  </div>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $('.responsive').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+  </script>
+</body>
+</html>
