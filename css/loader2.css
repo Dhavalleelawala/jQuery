@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.overley{
+  height:100vh;
+  background-color: #fff;
+  position: sticky;
+  top:0;
+  left:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid black;
+  border-top:10px solid #fff;
+  animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
